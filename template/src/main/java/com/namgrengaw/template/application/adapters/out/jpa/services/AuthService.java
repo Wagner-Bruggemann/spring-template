@@ -42,7 +42,7 @@ public class AuthService implements AuthOutputGateway {
     public Token signIn(AccountCredentials credentials) {
         authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(
-                        credentials.getPassword(),
+                        credentials.getUsername(),
                         credentials.getPassword()
                 )
         );
