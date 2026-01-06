@@ -19,6 +19,13 @@ logging:
   level:
     root: INFO
 
+## JWT CONFIG
+security:
+  jwt:
+    token:
+      secret-key: 359ed0821f069202f764e5f4f5430d66f6e1b649c0fbf41f5bf44a2aba52fd6cdabb074cbe097649456137c64e1e4f5bce88
+      expire-length: 3600000
+
 ## PORT CONFIG
 server:
   port: 11000
